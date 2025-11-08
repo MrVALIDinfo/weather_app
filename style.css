@@ -1,0 +1,95 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Заголовок */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Форма поиска */
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-form input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    width: 70%;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff9800;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #e68900;
+}
+
+/* Блок с погодой */
+.weather-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    text-align: left;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.weather-card h2 {
+    margin-bottom: 15px;
+}
+
+.weather-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.weather-card img {
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
